@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <style>
+        body {
+            background-image: url('happy-valentines-day-with-paper-hearts-and-copy-space-on-red-background-vector.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #4b2e83;
+            padding: 50px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 240, 246, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            position: relative;
+            padding-top: 100px; /* Extra padding for profile image */
+            z-index: 1; /* Ensure container is on top */
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #c9184a;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        button {
+            background-color: #c9184a;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e63946;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        /* Transition effect */
+        .fade-out {
+            animation: fadeOut 1s forwards;
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Image at the top -->
+        <img src="90277116_2985762731466766_4052097246282383360_n.jpg" alt="Profile Image" class="profile-img">
+        
+        <h1>Hey Angela❤️</h1>
+        <p>I just want to say that I really like the way you are. You have a special place in my heart. I'm really sorry if I can't tell you this in person, but I created this website to show my appreciation for you.</p>
+        <p>Daghan kog ways gi isip to show affection towards you mao nani akong last resort nahuna hunaan, ang reason ngano gi himo ko ni na website is because diko satisfied sa katong color paper gihatag nako nimo. Dili kaya sa kato na paper na gusto nako iingon sa imoha.</p>
+        <p>Are you ready?</p>
+        <div class="button-container">
+            <button onclick="startTransition()">Yes</button>
+            <button onclick="alert('No worries, I still like you!')">No</button>
+        </div>
+    </div>
+
+    <script>
+        function startTransition() {
+            document.querySelector('.container').classList.add('fade-out');
+            setTimeout(function() {
+                window.location.href = 'question1.html'; // Redirect to the new HTML page
+            }, 1000); // Duration should match the animation duration
+        }
+    </script>
+</body>
+</html>
